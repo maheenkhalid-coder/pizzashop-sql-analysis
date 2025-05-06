@@ -84,6 +84,12 @@ Calculates the percentage contribution of each pizza category to total revenue, 
 
 ## ✅ Summary
 
-This project demonstrates how structured query language (SQL) can be used to uncover valuable business insights from transactional data, such as identifying best-selling pizzas, understanding customer behavior, and optimizing product strategy.
+This project demonstrates how SQL can be used to uncover valuable business insights from transactional data. By analyzing real-world pizza order data, I was able to:
 
----
+- Identify top-selling and low-performing pizza types.
+- Calculate average daily sales trends.
+- Measure revenue contributions by pizza category.
+- Create clean, optimized queries using JOINs, aggregation, subqueries, and sorting.
+
+This type of analysis helps businesses improve decision-making for marketing, inventory, and product strategy. It’s a hands-on example of how data analysis and SQL skills can turn raw data into actionable insights.
+
