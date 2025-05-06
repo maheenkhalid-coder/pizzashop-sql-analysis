@@ -6,7 +6,7 @@ This project focuses on analyzing pizza sales data using SQL and MySQL Workbench
 
 ## 🧱 Database Structure
 
-The database contains 4 tables:
+The database (`pizzashop`) contains 4 tables:
 
 - `pizza_types(pizza_type_id, name, category, ingredients)`
 - `pizzas(pizza_id, pizza_type_id, size, price)`
@@ -18,49 +18,72 @@ The database contains 4 tables:
 
 ---
 
+## 🚀 Getting Started
+
+1. Clone this repository  
+2. Import the SQL data file into MySQL Workbench  
+3. Open and run the `solved_queries_with_questions.sql` script to explore the insights  
+
+---
+
+## 📘 Key Learnings
+
+- Writing complex SQL joins, aggregations, and subqueries  
+- Designing a normalized relational database  
+- Deriving actionable insights from raw data  
+- Creating and interpreting ER diagrams  
+
+---
+
 ## 📊 Business Questions & SQL Analysis
 
 ### 1️⃣ Total Revenue from Pizza Sales
 
 **💡 Explanation:**  
-To calculate total revenue, we need to multiply each pizza's price by its ordered quantity and add the total.
+To calculate total revenue, we multiply each pizza's price by its ordered quantity and sum the results.
 
 ![image](https://github.com/user-attachments/assets/4adc329d-8d93-4fcc-b83e-08ae757f31b3)
 
-### 2️⃣  List the top 5 most ordered pizza types and their quantities.
+---
+
+### 2️⃣ Top 5 Most Ordered Pizza Types and Their Quantities
 
 **💡 Explanation:**  
-We join the pizza types and order details to count the total quantity ordered per pizza.
+We join `pizza_types` and `order_details` to count the total quantity ordered per pizza.
 
 ![image](https://github.com/user-attachments/assets/89a4039d-f135-4824-bf57-90ac47d7c9f2)
 
+---
 
-### 2️⃣  List the top 5 most ordered pizza types and their quantities.
+### 3️⃣ Average Number of Pizzas Ordered Per Day
 
 **💡 Explanation:**  
-We join the pizza types and order details to count the total quantity ordered per pizza.
-
-![image](https://github.com/user-attachments/assets/89a4039d-f135-4824-bf57-90ac47d7c9f2)
-
-### 3️⃣  Group the orders by date and calculate the average number of pizzas ordered per day.
-
-**💡 Explanation:** 
 Calculates the average number of pizzas ordered per day by first summing quantities per date and then averaging those daily totals.
 
 ![image](https://github.com/user-attachments/assets/c9dd13b1-aec0-471f-bf21-f0822a0b235d)
 
-### 4️⃣ Top 3 Revenue-Generating Pizza Types
+---
 
-**💡 Explanation:** 
-Retrieves the top 3 least revenue-generating pizza types by calculating total revenue (quantity × price) and sorting them in ascending order.
+### 4️⃣ Top 3 Least Revenue-Generating Pizza Types
+
+**💡 Explanation:**  
+Retrieves the top 3 least revenue-generating pizza types by calculating total revenue (quantity × price) and sorting in ascending order.
 
 ![image](https://github.com/user-attachments/assets/bd1822cf-08ab-4381-956d-4826e828bc3f)
 
-### 5️⃣ Revenue Contribution of Each Pizza Type (%)
+---
 
-**💡 Explanation:** 
-Calculates the percentage contribution of each pizza category to the total revenue, sorting the results from highest to lowest.
- 
+### 5️⃣ Revenue Contribution of Each Pizza Category (%)
+
+**💡 Explanation:**  
+Calculates the percentage contribution of each pizza category to total revenue, sorted from highest to lowest.
+
 ![image](https://github.com/user-attachments/assets/7bc08371-ea8b-47e2-8dd2-d4e446cb73aa)
 
+---
 
+## ✅ Summary
+
+This project demonstrates how structured query language (SQL) can be used to uncover valuable business insights from transactional data, such as identifying best-selling pizzas, understanding customer behavior, and optimizing product strategy.
+
+---
