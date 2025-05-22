@@ -93,3 +93,7 @@ This project demonstrates how SQL can be used to uncover valuable business insig
 
 This type of analysis helps businesses improve decision-making for marketing, inventory, and product strategy. It’s a hands-on example of how data analysis and SQL skills can turn raw data into actionable insights.
 
+---
+
+## 📬 Contact
+Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/maheen-khalid-38a0591b0/).
